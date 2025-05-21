@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="calculator.css">
+     <title>CALCULATOR</title>
+</head>
+<body>
+    <div id="calculator">
+     <input id="display" readonly placeholder="0">
+     <div>
+          <button onclick="clearScreen()" class="operator">AC</button>
+          <button onclick="clearScreen()" class="operator">DEL</button>
+          <button onclick="append('%')" class="operator">%</button>
+          <button onclick="append('/')" class="operator">/</button>
+     </div>
+     <div>
+          <button onclick="append('7')">7</button>
+          <button onclick="append('8')">8</button>
+          <button onclick="append('9')">9</button>
+          <button onclick="append('*')" class="operator">*</button>
+     </div>
+     <div>
+          <button onclick="append('4')">4</button>
+          <button onclick="append('5')">5</button>
+          <button onclick="append('6')">6</button>
+          <button  onclick="append('-')" class="operator">-</button>
+     </div>
+     <div>
+          <button onclick="append('1')">1</button>
+          <button onclick="append('2')">2</button>
+          <button onclick="append('3')">3</button>
+          <button onclick="append('+')" class="operator">+</button>
+     </div>
+     <div>
+          <button onclick="append('00')">00</button>
+          <button onclick="append('0')">0</button>
+          <button onclick="append('.')">.</button>
+          <button onclick="calculate('=')" class="equalbtn">=</button>
+     </div>
+    </div> 
+     
+
+
+     <script src="calculator.js"></script>
+</body>
+</html>
